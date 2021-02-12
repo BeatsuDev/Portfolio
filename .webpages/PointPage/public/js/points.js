@@ -1,21 +1,21 @@
 var points = []
 Array.prototype.drawConnections = function(thickness=1){
 	for (var i = 0; i < this.length-1; i++) {
-			for (var j = i+1; j < this.length; j++) {
-				a = this[i];
-				b = this[j];
+		for (var j = i+1; j < this.length; j++) {
+			a = this[i];
+			b = this[j];
 
-				if (!a.connections.includes(b)) continue
+			if (!a.connections.includes(b)) continue
 
-				ctx.lineWidth = thickness
-				ctx.strokeStyle = 'white'
+			ctx.lineWidth = thickness
+			ctx.strokeStyle = 'white'
 
-				ctx.beginPath()
-				ctx.moveTo(a.x, a.y);
-				ctx.lineTo(b.x, b.y);
-				ctx.stroke();
-			}
-		}	
+			ctx.beginPath()
+			ctx.moveTo(a.x, a.y);
+			ctx.lineTo(b.x, b.y);
+			ctx.stroke();
+		}
+	}	
 }
 
 mouse = {x:0, y:0, out:false}

@@ -1,0 +1,28 @@
+#container {
+	position: fixed; top: 0;
+	transform: translateY(100vh);
+	width: 100vw; height: 1000px;
+	transition-duration: .3s;
+	background-color: rgba(100, 100, 100, 0.2);
+	border-radius: 50px 50px;
+}
+
+.row {
+	width: 100%; height: 320px;
+	display: flex;
+	justify-content: center;
+}
+
+#row1 {margin-top: 80px;}
+#row2 {margin-top: 30px;}
+
+.item {
+	height: 300px; width: 250px;
+	padding: 10px;
+	margin: 0 15px;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	border-radius: 25px;
+	border: 1px solid white;
+	box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}

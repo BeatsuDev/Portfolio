@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Pointmesh</title>
-	<link rel="stylesheet" type="text/css" href="css/loading.css">
 	<style type="text/css">
 		body {
 			margin:0;
@@ -15,17 +14,28 @@
 			transition-duration: 2s;
 		}
 		* {
-			transition-duration: .5s;
-		}
-		#loader {
-			opacity: 0;
+			transition-duration: .1s;
 		}
 	</style>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <canvas></canvas>
 
-<div id="container"></div>
+<div id="container">
+	<div id="row1" class="row">
+		<div class="item">
+			
+		</div>
+		<div class="item">
+			
+		</div>
+		<div class="item">
+			
+		</div>
+	</div>
+	<div id="row2" class="row"></div>
+</div>
 
 <script type="text/javascript">
 	const canvas = document.querySelector('canvas');
@@ -40,6 +50,6 @@
 	})
 </script>
 <script src="js/points.js"></script>
-<script src="js/intro.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
