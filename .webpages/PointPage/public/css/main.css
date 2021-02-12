@@ -20,9 +20,25 @@
 	height: 300px; width: 250px;
 	padding: 10px;
 	margin: 0 15px;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(50, 50, 50, 0.9);
+	text-align: center;
 
 	border-radius: 25px;
 	border: 1px solid white;
-	box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+	box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+.item:hover {
+	box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+}
+
+.item > h1 {
+	color: red;
+	text-shadow:
+		-1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px -1px 0 #000,
+		1px 1px 0 #000;
+	font-size: 40px;
 }
