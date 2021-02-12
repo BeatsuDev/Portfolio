@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Placeholder</title>
+		<script data-ad-client="ca-pub-6064531666275489" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<style>
+			h1 {
+				position: fixed;
+				top: 30%;
+				font-size: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+<h1>Hi... Please don't look at the other stuff I have... It's under construction</h1>
+		</center>
+		<script>
+const title = document.querySelector('h1');
+
+function change() {
+	if (document.body.style.backgroundColor == 'white') {
+		document.body.style.backgroundColor = 'black';
+	} else {
+		document.body.style.backgroundColor = 'white';
+	}
+
+	if (title.style.color == 'black') {
+		title.style.color = 'white';
+	} else {
+		title.style.color = 'black';
+	}
+
+	setTimeout(change, 1500)
+}
+
+setTimeout( () => {
+	document.body.style.transitionDuration = '1s';
+	document.querySelector('h1').style.transitionDuration = '1s';
+}, 500)
+change()
+		</script>
+	</body>
+</html>

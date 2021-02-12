@@ -6,7 +6,7 @@ const fs = require('fs')
 // The webpage to host
 // Set up this way to easily switch between different websites. I'm trying
 // out things here, cuz I suck at design...
-webpage = "PointPage"
+webpage = "Placeholder"
 app = express()
 
 privateKey = fs.readFileSync('sslcert/privkey.pem', 'utf8')
